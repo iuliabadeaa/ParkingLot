@@ -11,6 +11,7 @@ public class Car {
 
     String licensePlate;
     String parkingSpot;
+    String data;
 
     @ManyToOne
     User owner;
@@ -45,5 +46,13 @@ public class Car {
 
     public void setOwner(User owner) {
         this.owner = owner;
+    }
+
+    public String getData() {
+        return data;
+    }
+
+    public void setData(String data) {
+        this.data = data;
     }
 }

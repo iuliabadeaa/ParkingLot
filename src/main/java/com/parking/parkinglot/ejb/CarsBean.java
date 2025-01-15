@@ -34,7 +34,7 @@ public class CarsBean {
     private List<CarDto> copyCarsToDto(List<Car> list){
         List<CarDto> dtos=new ArrayList<>();
         for(Car car : list){
-            CarDto c=new CarDto(car.getId(),car.getLicensePlate(), car.getParkingSpot(), car.getOwner().getUsername());
+            CarDto c=new CarDto(car.getId(),car.getLicensePlate(), car.getParkingSpot(), car.getOwner().getUsername(), car.getData());
             dtos.add(c);
         }
         return dtos;

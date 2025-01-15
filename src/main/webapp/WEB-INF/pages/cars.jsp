@@ -21,6 +21,9 @@
             <div class="col">
                 ${car.ownerName}
             </div>
+            <div class="col">
+                    ${car.data}
+            </div>
         </div>
     </c:forEach>
 
